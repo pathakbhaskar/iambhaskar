@@ -4,7 +4,7 @@ pipeline {
     stage('Install Apache') {
       steps {
         sh 'sudo yum install httpd -y'
-        sh 'sudo yum service httpd start'
+        sh 'sudo service httpd start'
       }
     }
 
